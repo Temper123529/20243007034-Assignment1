@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">CampusLife</string>
+    <string name="welcome_text">Welcome to\nCampusLife - Your Pocket Guide to\nUniversity of Waikato</string>
+    <string name="facilities">Facilities</string>
+    <string name="events">Events</string>
+    <string name="clubs">Clubs</string>
+    <string name="support">Support</string>
+
 
 </resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root layout for landscape orientation with responsive weight distribution -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Welcome banner: occupies 50% of screen height via layout_weight -->
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/welcome_text"
+        android:textSize="40sp"
+        android:textAlignment="center"/>
+
+    <!-- Button container: single horizontal row for landscape display -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Navigation button for Facilities section -->
+        <ImageButton
+            android:id="@+id/btn_facilities"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/img_btn_facilities"
+            android:background="@drawable/btn_selector"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/facilities"
+            android:onClick="onFacilitiesClick"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Navigation button for Events section -->
+        <ImageButton
+            android:id="@+id/btn_events"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/img_btn_events"
+            android:background="@drawable/btn_selector"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/events"
+            android:onClick="onEventsClick"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <!-- Navigation button for Clubs section -->
+        <ImageButton
+            android:id="@+id/btn_clubs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/img_btn_clubs"
+            android:background="@drawable/btn_selector"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/clubs"
+            android:onClick="onClubsClick"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <!-- Navigation button for Support section -->
+        <ImageButton
+            android:id="@+id/btn_support"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/img_btn_support"
+            android:background="@drawable/btn_selector"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/support"
+            android:onClick="onSupportClick"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
