@@ -30,31 +30,33 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gap="16dp">
+            android:orientation="horizontal">
 
             <!-- Navigation button for Facilities section -->
             <ImageButton
                 android:id="@+id/btn_facilities"
                 android:layout_width="0dp"
-                android:background="@drawable/btn_selector"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/img_btn_facilities"
+                android:background="@drawable/btn_selector"
                 android:scaleType="centerInside"
-                android:contentDescription="Facilities"/>
+                android:contentDescription="@string/facilities"
+                android:onClick="onFacilitiesClick"
+                android:layout_marginEnd="8dp"/>
 
             <!-- Navigation button for Events section -->
             <ImageButton
                 android:id="@+id/btn_events"
                 android:layout_width="0dp"
-                android:background="@drawable/btn_selector"
-
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/img_btn_events"
+                android:background="@drawable/btn_selector"
                 android:scaleType="centerInside"
-                android:contentDescription="Events"/>
+                android:contentDescription="@string/events"
+                android:onClick="onEventsClick"
+                android:layout_marginStart="8dp"/>
         </LinearLayout>
 
         <!-- Second row: Clubs and Support buttons -->
@@ -63,35 +65,35 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:gap="16dp"
             android:layout_marginTop="16dp">
 
             <!-- Navigation button for Clubs section -->
             <ImageButton
                 android:id="@+id/btn_clubs"
                 android:layout_width="0dp"
-                android:background="@drawable/btn_selector"
-
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/img_btn_clubs"
+                android:background="@drawable/btn_selector"
                 android:scaleType="centerInside"
-                android:contentDescription="Clubs"/>
+                android:contentDescription="@string/clubs"
+                android:onClick="onClubsClick"
+                android:layout_marginEnd="8dp"/>
 
             <!-- Navigation button for Support section -->
             <ImageButton
                 android:id="@+id/btn_support"
                 android:layout_width="0dp"
-                android:background="@drawable/btn_selector"
-
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/img_btn_support"
+                android:background="@drawable/btn_selector"
                 android:scaleType="centerInside"
-                android:contentDescription="Support"/>
-
-
+                android:contentDescription="@string/support"
+                android:onClick="onSupportClick"
+                android:layout_marginStart="8dp"/>
         </LinearLayout>
     </LinearLayout>
+
 
 </LinearLayout>
